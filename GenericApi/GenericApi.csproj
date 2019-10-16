@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Src\Persistence\Persistence.csproj" />
   </ItemGroup>
 
 </Project>
