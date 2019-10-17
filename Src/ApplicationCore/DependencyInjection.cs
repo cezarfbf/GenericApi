@@ -1,18 +1,23 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using ApplicationCore.Persistence;
+using ApplicationCore.Repositories.Implementations;
+using ApplicationCore.Repositories.Interfaces;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+
 
 namespace ApplicationCore
 {
     public static class DependencyInjection
     {
-        public static IServiceCollection AddApplication(this IServiceCollection services)
+        public static IServiceCollection AddApplicationCore(this IServiceCollection services, IConfiguration configuration)
         {
-            //services.AddAutoMapper(Assembly.GetExecutingAssembly());
-            //services.AddMediatR(Assembly.GetExecutingAssembly());
-            //services.AddTransient(typeof(IPipelineBehavior<,>), typeof(RequestPerformanceBehaviour<,>));
-            //services.AddTransient(typeof(IPipelineBehavior<,>), typeof(RequestValidationBehavior<,>));
+            services.AddDbContext<DefaultDbContext>(options =>
+                            options.UseSqlServer(configuration.GetConnectionString("GenericApiDatabase")));
+
+            services.AddScoped<IDefaultDbContext>(provider => provider.GetService<DefaultDbContext>());
+
+            services.AddScoped<IProductRepository>(provider => provider.GetService<ProductRepository>());
 
             return services;
         }

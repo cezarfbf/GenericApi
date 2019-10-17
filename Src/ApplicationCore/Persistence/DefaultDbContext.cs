@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Persistence.Contexts
+namespace ApplicationCore.Persistence
 {
     public class DefaultDbContext : DbContext, IDefaultDbContext
     {

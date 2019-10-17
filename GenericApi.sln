@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericApi", "GenericApi\Ge
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{A4FC1B43-C35E-4C17-81E4-E13FE334494D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistence", "Src\Persistence\Persistence.csproj", "{D3A41C77-6E71-40E2-AB45-C9BC44D4E917}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplicationCore", "Src\ApplicationCore\ApplicationCore.csproj", "{CBBEC803-CB56-462D-8420-C4678ED00490}"
 EndProject
 Global
@@ -21,10 +19,6 @@ Global
 		{CA9C3A8E-F21D-4797-B311-79B69E374CA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CA9C3A8E-F21D-4797-B311-79B69E374CA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CA9C3A8E-F21D-4797-B311-79B69E374CA7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D3A41C77-6E71-40E2-AB45-C9BC44D4E917}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D3A41C77-6E71-40E2-AB45-C9BC44D4E917}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D3A41C77-6E71-40E2-AB45-C9BC44D4E917}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D3A41C77-6E71-40E2-AB45-C9BC44D4E917}.Release|Any CPU.Build.0 = Release|Any CPU
 		{CBBEC803-CB56-462D-8420-C4678ED00490}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{CBBEC803-CB56-462D-8420-C4678ED00490}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CBBEC803-CB56-462D-8420-C4678ED00490}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -34,8 +28,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{CA9C3A8E-F21D-4797-B311-79B69E374CA7} = {A4FC1B43-C35E-4C17-81E4-E13FE334494D}
-		{D3A41C77-6E71-40E2-AB45-C9BC44D4E917} = {A4FC1B43-C35E-4C17-81E4-E13FE334494D}
 		{CBBEC803-CB56-462D-8420-C4678ED00490} = {A4FC1B43-C35E-4C17-81E4-E13FE334494D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
